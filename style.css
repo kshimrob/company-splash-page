@@ -19,11 +19,11 @@ main {
 p {
 	width: 80%;
 	margin: 0 auto;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 h2 {
-	margin: 0 0 40px 0;
+	margin: 15px 0 40px 0;
 	display: inline-block;
 	font-size: 2.2em;
 }
@@ -31,19 +31,27 @@ h2 {
 h3 {
 	font-size: 1.5em;
 	color: #3E98B2;
+	margin-top: 0;
 }
 
 article {
-	padding: 75px 0;
+	padding: 100px 0;
 }
 
 footer {
 	background: #E7E7E7;
-	height: 110px;
+	height: 100px;
 	width: 85%;
 	margin: 0 auto 50px auto;
+	padding-top: 15px;
 }
 
-footer img {
-	margin: 30px 60px;
+footer ul {
+	list-style: none;
+	margin: 15px 0;
+}
+
+footer li {
+	margin: 0 65px;
+	display: inline;
 }
