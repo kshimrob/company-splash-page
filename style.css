@@ -1,23 +1,26 @@
 body {
-	background: url("Assets/bg_body.gif") repeat;
-	background-color: #2F2840;
+	background: #2F2840 url("Assets/bg_body.gif");
 	font-family: Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
+header, main, footer {
+	width: 85%;
+	margin: 0 auto;
+}
+
 header {
-	margin: 100px 0 80px 0;
+	padding: 100px 0 80px 0;
 }
 
 main {
 	background: white;	
-	width: 85%;
 	margin: 0 auto;
 	color: #45494D;
+	padding-top: 50px;
 }
 
 p {
-	width: 80%;
 	margin: 0 auto;
 	font-size: 1.3em;
 }
@@ -35,23 +38,32 @@ h3 {
 }
 
 article {
-	padding: 100px 0;
+	padding: 100px 110px;
 }
 
 footer {
 	background: #E7E7E7;
-	height: 100px;
-	width: 85%;
-	margin: 0 auto 50px auto;
-	padding-top: 15px;
+	padding: 30px 0;
 }
 
 footer ul {
 	list-style: none;
-	margin: 15px 0;
+	text-align: center;
 }
 
 footer li {
-	margin: 0 65px;
+	padding: 0 60px;
 	display: inline;
+	float: none;
 }
+
+@media only screen and (max-width: 700px) {
+	footer li {
+		padding: 0 15px;
+	}
+	article {
+		padding: 100px 20px;
+	}
+}
+
+/* Applying padding/margin to different things i.e. body vs header vs h1 OK?! */
